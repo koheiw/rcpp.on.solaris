@@ -6,6 +6,156 @@
 
 using namespace Rcpp;
 
+// qatd_cpp_collocations
+DataFrame qatd_cpp_collocations(const List& texts_, const CharacterVector& types_, const IntegerVector& words_ignore_, const unsigned int count_min, const IntegerVector sizes_, const String& method, const double smoothing);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_collocations(SEXP texts_SEXP, SEXP types_SEXP, SEXP words_ignore_SEXP, SEXP count_minSEXP, SEXP sizes_SEXP, SEXP methodSEXP, SEXP smoothingSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const List& >::type texts_(texts_SEXP);
+    Rcpp::traits::input_parameter< const CharacterVector& >::type types_(types_SEXP);
+    Rcpp::traits::input_parameter< const IntegerVector& >::type words_ignore_(words_ignore_SEXP);
+    Rcpp::traits::input_parameter< const unsigned int >::type count_min(count_minSEXP);
+    Rcpp::traits::input_parameter< const IntegerVector >::type sizes_(sizes_SEXP);
+    Rcpp::traits::input_parameter< const String& >::type method(methodSEXP);
+    Rcpp::traits::input_parameter< const double >::type smoothing(smoothingSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_collocations(texts_, types_, words_ignore_, count_min, sizes_, method, smoothing));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_manhattan
+NumericMatrix qatd_cpp_manhattan(const arma::sp_mat& A, const int margin);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_manhattan(SEXP ASEXP, SEXP marginSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type A(ASEXP);
+    Rcpp::traits::input_parameter< const int >::type margin(marginSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_manhattan(A, margin));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_manhattan2
+NumericMatrix qatd_cpp_manhattan2(const arma::sp_mat& A, const arma::sp_mat& B, const int margin);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_manhattan2(SEXP ASEXP, SEXP BSEXP, SEXP marginSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type A(ASEXP);
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type B(BSEXP);
+    Rcpp::traits::input_parameter< const int >::type margin(marginSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_manhattan2(A, B, margin));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_maximum
+NumericMatrix qatd_cpp_maximum(const arma::sp_mat& A, const int margin);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_maximum(SEXP ASEXP, SEXP marginSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type A(ASEXP);
+    Rcpp::traits::input_parameter< const int >::type margin(marginSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_maximum(A, margin));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_maximum2
+NumericMatrix qatd_cpp_maximum2(const arma::sp_mat& A, const arma::sp_mat& B, const int margin);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_maximum2(SEXP ASEXP, SEXP BSEXP, SEXP marginSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type A(ASEXP);
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type B(BSEXP);
+    Rcpp::traits::input_parameter< const int >::type margin(marginSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_maximum2(A, B, margin));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_canberra
+NumericMatrix qatd_cpp_canberra(const arma::sp_mat& A, const int margin);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_canberra(SEXP ASEXP, SEXP marginSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type A(ASEXP);
+    Rcpp::traits::input_parameter< const int >::type margin(marginSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_canberra(A, margin));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_canberra2
+NumericMatrix qatd_cpp_canberra2(const arma::sp_mat& A, const arma::sp_mat& B, const int margin);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_canberra2(SEXP ASEXP, SEXP BSEXP, SEXP marginSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type A(ASEXP);
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type B(BSEXP);
+    Rcpp::traits::input_parameter< const int >::type margin(marginSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_canberra2(A, B, margin));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_minkowski
+NumericMatrix qatd_cpp_minkowski(const arma::sp_mat& A, const int margin, const double p);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_minkowski(SEXP ASEXP, SEXP marginSEXP, SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type A(ASEXP);
+    Rcpp::traits::input_parameter< const int >::type margin(marginSEXP);
+    Rcpp::traits::input_parameter< const double >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_minkowski(A, margin, p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_minkowski2
+NumericMatrix qatd_cpp_minkowski2(const arma::sp_mat& A, const arma::sp_mat& B, const int margin, const double p);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_minkowski2(SEXP ASEXP, SEXP BSEXP, SEXP marginSEXP, SEXP pSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type A(ASEXP);
+    Rcpp::traits::input_parameter< const arma::sp_mat& >::type B(BSEXP);
+    Rcpp::traits::input_parameter< const int >::type margin(marginSEXP);
+    Rcpp::traits::input_parameter< const double >::type p(pSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_minkowski2(A, B, margin, p));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_fcm
+S4 qatd_cpp_fcm(const Rcpp::List& texts_, const int n_types, const NumericVector& weights_, const bool boolean, const bool ordered);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_fcm(SEXP texts_SEXP, SEXP n_typesSEXP, SEXP weights_SEXP, SEXP booleanSEXP, SEXP orderedSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const Rcpp::List& >::type texts_(texts_SEXP);
+    Rcpp::traits::input_parameter< const int >::type n_types(n_typesSEXP);
+    Rcpp::traits::input_parameter< const NumericVector& >::type weights_(weights_SEXP);
+    Rcpp::traits::input_parameter< const bool >::type boolean(booleanSEXP);
+    Rcpp::traits::input_parameter< const bool >::type ordered(orderedSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_fcm(texts_, n_types, weights_, boolean, ordered));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_kwic
+DataFrame qatd_cpp_kwic(const List& texts_, const CharacterVector types_, const List& words_, const IntegerVector& pats_, const unsigned int& window, const String& delim_);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_kwic(SEXP texts_SEXP, SEXP types_SEXP, SEXP words_SEXP, SEXP pats_SEXP, SEXP windowSEXP, SEXP delim_SEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const List& >::type texts_(texts_SEXP);
+    Rcpp::traits::input_parameter< const CharacterVector >::type types_(types_SEXP);
+    Rcpp::traits::input_parameter< const List& >::type words_(words_SEXP);
+    Rcpp::traits::input_parameter< const IntegerVector& >::type pats_(pats_SEXP);
+    Rcpp::traits::input_parameter< const unsigned int& >::type window(windowSEXP);
+    Rcpp::traits::input_parameter< const String& >::type delim_(delim_SEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_kwic(texts_, types_, words_, pats_, window, delim_));
+    return rcpp_result_gen;
+END_RCPP
+}
 // set_attr
 void set_attr(RObject object_, RObject attr_);
 RcppExport SEXP _rcpp_on_solaris_set_attr(SEXP object_SEXP, SEXP attr_SEXP) {
@@ -39,6 +189,175 @@ BEGIN_RCPP
     return R_NilValue;
 END_RCPP
 }
+// qatd_cpp_tokens_chunk
+List qatd_cpp_tokens_chunk(const List& texts_, const CharacterVector types_, const int size, const int overlap);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_tokens_chunk(SEXP texts_SEXP, SEXP types_SEXP, SEXP sizeSEXP, SEXP overlapSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const List& >::type texts_(texts_SEXP);
+    Rcpp::traits::input_parameter< const CharacterVector >::type types_(types_SEXP);
+    Rcpp::traits::input_parameter< const int >::type size(sizeSEXP);
+    Rcpp::traits::input_parameter< const int >::type overlap(overlapSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_tokens_chunk(texts_, types_, size, overlap));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_tokens_compound
+List qatd_cpp_tokens_compound(const List& texts_, const List& compounds_, const CharacterVector& types_, const String& delim_, const bool& join, int window_left, int window_right);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_tokens_compound(SEXP texts_SEXP, SEXP compounds_SEXP, SEXP types_SEXP, SEXP delim_SEXP, SEXP joinSEXP, SEXP window_leftSEXP, SEXP window_rightSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const List& >::type texts_(texts_SEXP);
+    Rcpp::traits::input_parameter< const List& >::type compounds_(compounds_SEXP);
+    Rcpp::traits::input_parameter< const CharacterVector& >::type types_(types_SEXP);
+    Rcpp::traits::input_parameter< const String& >::type delim_(delim_SEXP);
+    Rcpp::traits::input_parameter< const bool& >::type join(joinSEXP);
+    Rcpp::traits::input_parameter< int >::type window_left(window_leftSEXP);
+    Rcpp::traits::input_parameter< int >::type window_right(window_rightSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_tokens_compound(texts_, compounds_, types_, delim_, join, window_left, window_right));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_tokens_lookup
+List qatd_cpp_tokens_lookup(const List& texts_, const CharacterVector types_, const List& words_, const IntegerVector& keys_, const int overlap, const int nomatch);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_tokens_lookup(SEXP texts_SEXP, SEXP types_SEXP, SEXP words_SEXP, SEXP keys_SEXP, SEXP overlapSEXP, SEXP nomatchSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const List& >::type texts_(texts_SEXP);
+    Rcpp::traits::input_parameter< const CharacterVector >::type types_(types_SEXP);
+    Rcpp::traits::input_parameter< const List& >::type words_(words_SEXP);
+    Rcpp::traits::input_parameter< const IntegerVector& >::type keys_(keys_SEXP);
+    Rcpp::traits::input_parameter< const int >::type overlap(overlapSEXP);
+    Rcpp::traits::input_parameter< const int >::type nomatch(nomatchSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_tokens_lookup(texts_, types_, words_, keys_, overlap, nomatch));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_tokens_ngrams
+List qatd_cpp_tokens_ngrams(const List& texts_, const CharacterVector types_, const String delim_, const IntegerVector ns_, const IntegerVector skips_);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_tokens_ngrams(SEXP texts_SEXP, SEXP types_SEXP, SEXP delim_SEXP, SEXP ns_SEXP, SEXP skips_SEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const List& >::type texts_(texts_SEXP);
+    Rcpp::traits::input_parameter< const CharacterVector >::type types_(types_SEXP);
+    Rcpp::traits::input_parameter< const String >::type delim_(delim_SEXP);
+    Rcpp::traits::input_parameter< const IntegerVector >::type ns_(ns_SEXP);
+    Rcpp::traits::input_parameter< const IntegerVector >::type skips_(skips_SEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_tokens_ngrams(texts_, types_, delim_, ns_, skips_));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_tokens_recompile
+List qatd_cpp_tokens_recompile(const List& texts_, const CharacterVector types_, const bool gap, const bool dup);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_tokens_recompile(SEXP texts_SEXP, SEXP types_SEXP, SEXP gapSEXP, SEXP dupSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const List& >::type texts_(texts_SEXP);
+    Rcpp::traits::input_parameter< const CharacterVector >::type types_(types_SEXP);
+    Rcpp::traits::input_parameter< const bool >::type gap(gapSEXP);
+    Rcpp::traits::input_parameter< const bool >::type dup(dupSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_tokens_recompile(texts_, types_, gap, dup));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_tokens_replace
+List qatd_cpp_tokens_replace(const List& texts_, const CharacterVector types_, const List& patterns_, const List& replacements_);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_tokens_replace(SEXP texts_SEXP, SEXP types_SEXP, SEXP patterns_SEXP, SEXP replacements_SEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const List& >::type texts_(texts_SEXP);
+    Rcpp::traits::input_parameter< const CharacterVector >::type types_(types_SEXP);
+    Rcpp::traits::input_parameter< const List& >::type patterns_(patterns_SEXP);
+    Rcpp::traits::input_parameter< const List& >::type replacements_(replacements_SEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_tokens_replace(texts_, types_, patterns_, replacements_));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_tokens_segment
+List qatd_cpp_tokens_segment(const List& texts_, const CharacterVector types_, const List& patterns_, const bool& remove, const int& position);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_tokens_segment(SEXP texts_SEXP, SEXP types_SEXP, SEXP patterns_SEXP, SEXP removeSEXP, SEXP positionSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const List& >::type texts_(texts_SEXP);
+    Rcpp::traits::input_parameter< const CharacterVector >::type types_(types_SEXP);
+    Rcpp::traits::input_parameter< const List& >::type patterns_(patterns_SEXP);
+    Rcpp::traits::input_parameter< const bool& >::type remove(removeSEXP);
+    Rcpp::traits::input_parameter< const int& >::type position(positionSEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_tokens_segment(texts_, types_, patterns_, remove, position));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_tokens_select
+List qatd_cpp_tokens_select(const List& texts_, const CharacterVector types_, const List& words_, int mode, bool padding, int window_left, int window_right, const IntegerVector pos_from_, const IntegerVector pos_to_);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_tokens_select(SEXP texts_SEXP, SEXP types_SEXP, SEXP words_SEXP, SEXP modeSEXP, SEXP paddingSEXP, SEXP window_leftSEXP, SEXP window_rightSEXP, SEXP pos_from_SEXP, SEXP pos_to_SEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const List& >::type texts_(texts_SEXP);
+    Rcpp::traits::input_parameter< const CharacterVector >::type types_(types_SEXP);
+    Rcpp::traits::input_parameter< const List& >::type words_(words_SEXP);
+    Rcpp::traits::input_parameter< int >::type mode(modeSEXP);
+    Rcpp::traits::input_parameter< bool >::type padding(paddingSEXP);
+    Rcpp::traits::input_parameter< int >::type window_left(window_leftSEXP);
+    Rcpp::traits::input_parameter< int >::type window_right(window_rightSEXP);
+    Rcpp::traits::input_parameter< const IntegerVector >::type pos_from_(pos_from_SEXP);
+    Rcpp::traits::input_parameter< const IntegerVector >::type pos_to_(pos_to_SEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_tokens_select(texts_, types_, words_, mode, padding, window_left, window_right, pos_from_, pos_to_));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_is_grouped_numeric
+bool qatd_cpp_is_grouped_numeric(NumericVector values_, IntegerVector groups_);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_is_grouped_numeric(SEXP values_SEXP, SEXP groups_SEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericVector >::type values_(values_SEXP);
+    Rcpp::traits::input_parameter< IntegerVector >::type groups_(groups_SEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_is_grouped_numeric(values_, groups_));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_is_grouped_character
+bool qatd_cpp_is_grouped_character(CharacterVector values_, IntegerVector groups_);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_is_grouped_character(SEXP values_SEXP, SEXP groups_SEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< CharacterVector >::type values_(values_SEXP);
+    Rcpp::traits::input_parameter< IntegerVector >::type groups_(groups_SEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_is_grouped_character(values_, groups_));
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_set_load_factor
+void qatd_cpp_set_load_factor(std::string type, float value);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_set_load_factor(SEXP typeSEXP, SEXP valueSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< std::string >::type type(typeSEXP);
+    Rcpp::traits::input_parameter< float >::type value(valueSEXP);
+    qatd_cpp_set_load_factor(type, value);
+    return R_NilValue;
+END_RCPP
+}
+// qatd_cpp_get_load_factor
+List qatd_cpp_get_load_factor();
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_get_load_factor() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_get_load_factor());
+    return rcpp_result_gen;
+END_RCPP
+}
 // qatd_cpp_set_meta
 void qatd_cpp_set_meta(RObject object_, RObject meta_);
 RcppExport SEXP _rcpp_on_solaris_qatd_cpp_set_meta(SEXP object_SEXP, SEXP meta_SEXP) {
@@ -50,12 +369,62 @@ BEGIN_RCPP
     return R_NilValue;
 END_RCPP
 }
+// qatd_cpp_tbb_enabled
+bool qatd_cpp_tbb_enabled();
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_tbb_enabled() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_tbb_enabled());
+    return rcpp_result_gen;
+END_RCPP
+}
+// qatd_cpp_is_overlap
+bool qatd_cpp_is_overlap(SEXP x1_, SEXP y1_, SEXP w1_, SEXP h1_, SEXP boxe_);
+RcppExport SEXP _rcpp_on_solaris_qatd_cpp_is_overlap(SEXP x1_SEXP, SEXP y1_SEXP, SEXP w1_SEXP, SEXP h1_SEXP, SEXP boxe_SEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type x1_(x1_SEXP);
+    Rcpp::traits::input_parameter< SEXP >::type y1_(y1_SEXP);
+    Rcpp::traits::input_parameter< SEXP >::type w1_(w1_SEXP);
+    Rcpp::traits::input_parameter< SEXP >::type h1_(h1_SEXP);
+    Rcpp::traits::input_parameter< SEXP >::type boxe_(boxe_SEXP);
+    rcpp_result_gen = Rcpp::wrap(qatd_cpp_is_overlap(x1_, y1_, w1_, h1_, boxe_));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_rcpp_on_solaris_qatd_cpp_collocations", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_collocations, 7},
+    {"_rcpp_on_solaris_qatd_cpp_manhattan", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_manhattan, 2},
+    {"_rcpp_on_solaris_qatd_cpp_manhattan2", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_manhattan2, 3},
+    {"_rcpp_on_solaris_qatd_cpp_maximum", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_maximum, 2},
+    {"_rcpp_on_solaris_qatd_cpp_maximum2", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_maximum2, 3},
+    {"_rcpp_on_solaris_qatd_cpp_canberra", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_canberra, 2},
+    {"_rcpp_on_solaris_qatd_cpp_canberra2", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_canberra2, 3},
+    {"_rcpp_on_solaris_qatd_cpp_minkowski", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_minkowski, 3},
+    {"_rcpp_on_solaris_qatd_cpp_minkowski2", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_minkowski2, 4},
+    {"_rcpp_on_solaris_qatd_cpp_fcm", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_fcm, 5},
+    {"_rcpp_on_solaris_qatd_cpp_kwic", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_kwic, 6},
     {"_rcpp_on_solaris_set_attr", (DL_FUNC) &_rcpp_on_solaris_set_attr, 2},
     {"_rcpp_on_solaris_set_attr_list", (DL_FUNC) &_rcpp_on_solaris_set_attr_list, 2},
     {"_rcpp_on_solaris_set_attr_s4", (DL_FUNC) &_rcpp_on_solaris_set_attr_s4, 2},
+    {"_rcpp_on_solaris_qatd_cpp_tokens_chunk", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_tokens_chunk, 4},
+    {"_rcpp_on_solaris_qatd_cpp_tokens_compound", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_tokens_compound, 7},
+    {"_rcpp_on_solaris_qatd_cpp_tokens_lookup", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_tokens_lookup, 6},
+    {"_rcpp_on_solaris_qatd_cpp_tokens_ngrams", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_tokens_ngrams, 5},
+    {"_rcpp_on_solaris_qatd_cpp_tokens_recompile", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_tokens_recompile, 4},
+    {"_rcpp_on_solaris_qatd_cpp_tokens_replace", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_tokens_replace, 4},
+    {"_rcpp_on_solaris_qatd_cpp_tokens_segment", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_tokens_segment, 5},
+    {"_rcpp_on_solaris_qatd_cpp_tokens_select", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_tokens_select, 9},
+    {"_rcpp_on_solaris_qatd_cpp_is_grouped_numeric", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_is_grouped_numeric, 2},
+    {"_rcpp_on_solaris_qatd_cpp_is_grouped_character", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_is_grouped_character, 2},
+    {"_rcpp_on_solaris_qatd_cpp_set_load_factor", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_set_load_factor, 2},
+    {"_rcpp_on_solaris_qatd_cpp_get_load_factor", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_get_load_factor, 0},
     {"_rcpp_on_solaris_qatd_cpp_set_meta", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_set_meta, 2},
+    {"_rcpp_on_solaris_qatd_cpp_tbb_enabled", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_tbb_enabled, 0},
+    {"_rcpp_on_solaris_qatd_cpp_is_overlap", (DL_FUNC) &_rcpp_on_solaris_qatd_cpp_is_overlap, 5},
     {NULL, NULL, 0}
 };
 

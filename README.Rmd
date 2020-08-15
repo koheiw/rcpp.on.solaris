@@ -20,3 +20,4 @@ Potential disabilizing factors
 - Certain element in the meta list
 - Depth of frames (v0.0.5)
 - Real corpus and summary object
+- Other C++ files

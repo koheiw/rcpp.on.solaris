@@ -24,10 +24,6 @@ void set_attr_s4(S4 object_, RObject attr_) {
     //return object_;
 }
 
-// [[Rcpp::export]]
-void qatd_cpp_set_meta(RObject object_, RObject meta_) {
-    object_.attr("meta") = meta_;
-}
 
 // You can include R code blocks in C++ files processed with sourceCpp
 // (useful for testing and development). The R code will be automatically
