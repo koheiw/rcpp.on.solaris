@@ -6,8 +6,17 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+```{r eval=FALSE}
 rhub::check(platform = "solaris-x86-patched")
 rhub::check(platform = "solaris-x86-patched-ods")
 ```
 
+Potential disabilizing factors
+
+- Object hasher (v0.0.1)
+- Libraries in Makevars (v0.0.2-0.0.3)
+- Structure of quanteda objects (v0.0.4)
+- Size of R objects
+- Certain element in the meta list
+- Depth of frames (v0.0.5)
+- Real corpus and summary object

@@ -1,15 +1,10 @@
+#include "lib.h"
+//#include "dev.h"
+#include "recompile.h"
+using namespace quanteda;
+
 #include <Rcpp.h>
 using namespace Rcpp;
-
-// This is a simple example of exporting a C++ function to R. You can
-// source this function into an R session using the Rcpp::sourceCpp
-// function (or via the Source button on the editor toolbar). Learn
-// more about Rcpp at:
-//
-//   http://www.rcpp.org/
-//   http://adv-r.had.co.nz/Rcpp.html
-//   http://gallery.rcpp.org/
-//
 
 // [[Rcpp::export]]
 void set_attr(RObject object_, RObject attr_) {
@@ -27,6 +22,11 @@ void set_attr_list(List object_, RObject attr_) {
 void set_attr_s4(S4 object_, RObject attr_) {
     object_.attr("meta") = attr_;
     //return object_;
+}
+
+// [[Rcpp::export]]
+void qatd_cpp_set_meta(RObject object_, RObject meta_) {
+    object_.attr("meta") = meta_;
 }
 
 // You can include R code blocks in C++ files processed with sourceCpp

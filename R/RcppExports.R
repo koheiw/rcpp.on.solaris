@@ -2,14 +2,18 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 set_attr <- function(object_, attr_) {
-    .Call('_rcpp_on_solaris_set_attr', PACKAGE = 'rcpp.on.solaris', object_, attr_)
+    invisible(.Call('_rcpp_on_solaris_set_attr', PACKAGE = 'rcpp.on.solaris', object_, attr_))
 }
 
 set_attr_list <- function(object_, attr_) {
-    .Call('_rcpp_on_solaris_set_attr_list', PACKAGE = 'rcpp.on.solaris', object_, attr_)
+    invisible(.Call('_rcpp_on_solaris_set_attr_list', PACKAGE = 'rcpp.on.solaris', object_, attr_))
 }
 
 set_attr_s4 <- function(object_, attr_) {
-    .Call('_rcpp_on_solaris_set_attr_s4', PACKAGE = 'rcpp.on.solaris', object_, attr_)
+    invisible(.Call('_rcpp_on_solaris_set_attr_s4', PACKAGE = 'rcpp.on.solaris', object_, attr_))
+}
+
+qatd_cpp_set_meta <- function(object_, meta_) {
+    invisible(.Call('_rcpp_on_solaris_qatd_cpp_set_meta', PACKAGE = 'rcpp.on.solaris', object_, meta_))
 }
 
