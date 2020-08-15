@@ -12,21 +12,21 @@ using namespace Rcpp;
 //
 
 // [[Rcpp::export]]
-RObject set_attr(RObject object_, RObject attr_) {
+void set_attr(RObject object_, RObject attr_) {
     object_.attr("meta") = attr_;
-    return object_;
+    //return object_;
 }
 
 // [[Rcpp::export]]
-List set_attr_list(List object_, RObject attr_) {
+void set_attr_list(List object_, RObject attr_) {
     object_.attr("meta") = attr_;
-    return object_;
+    //return object_;
 }
 
 // [[Rcpp::export]]
-S4 set_attr_s4(S4 object_, RObject attr_) {
+void set_attr_s4(S4 object_, RObject attr_) {
     object_.attr("meta") = attr_;
-    return object_;
+    //return object_;
 }
 
 // You can include R code blocks in C++ files processed with sourceCpp
