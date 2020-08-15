@@ -1,0 +1,16 @@
+Package: rcpp.on.solaris
+Type: Package
+Title: Test Rcpp on Solaries
+Version: 0.1.0
+Authors@R:
+    person("Kohei", "Watanabe", email = "watanabe.kohei@gmail.com", role = c("cre", "aut", "cph"), comment = c(ORCID = "0000-0001-6519-5265"))
+Description: Test Rcpp on the Solaries operating sysrem
+License: GPL-3
+LinkingTo: Rcpp
+Encoding: UTF-8
+LazyData: true
+Imports:
+    Rcpp,
+    Matrix,
+    testthat
+RoxygenNote: 7.1.1

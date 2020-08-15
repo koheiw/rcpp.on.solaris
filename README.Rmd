@@ -1,0 +1,13 @@
+---
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rhub::check(platform = "solaris-x86-patched")
+rhub::check(platform = "solaris-x86-patched-ods")
+```
+
